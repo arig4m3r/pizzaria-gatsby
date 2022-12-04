@@ -1,0 +1,19 @@
+backend:
+  name: test-repo
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: pizzas
+    label: Pizza
+    folder: pizzas
+    create: true
+    fields:
+      - { name: name, label: Nome }
+      - { name: picture, label: Foto, widget: "image" }
+      - { name: value_b, label: Valor Broto, widget: "number", value_type: "float"}
+      - { name: value_p, label: Valor Pequena, widget: "number", value_type: "float"}
+      - { name: value_m, label: Valor Media, widget: "number", value_type: "float"}
+      - { name: value_f, label: Valor Familia, widget: "number", value_type: "float"}
+      - { name: description, label: Descrição }
