@@ -15,7 +15,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { name: name, label: Nome }
-      - { name: "titleslug", widget: "hidden", default: "{{slug}}" }
+      - { name: slug, label: Slug, required: true, widget: string }
       - { name: picture, label: Foto, widget: "image" }
       - {
           name: value_b,
