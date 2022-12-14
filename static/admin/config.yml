@@ -11,6 +11,8 @@ collections:
     label: Pizza
     folder: pizzas
     create: true
+    identifier_field: name
+    slug: "{{slug}}"
     fields:
       - { name: name, label: Nome }
       - { name: picture, label: Foto, widget: "image" }

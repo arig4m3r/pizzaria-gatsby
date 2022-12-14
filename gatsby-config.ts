@@ -28,6 +28,19 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  },
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      extensions: [`.mdx`, `.md`],
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `pizzas`,
+      path: `${__dirname}/pizzas`,
+    },
   }]
 };
 
